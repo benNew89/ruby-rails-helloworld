@@ -109,7 +109,7 @@ commands:
     steps:
       - run:
           name: Run migrations
-          command: MAILERLITE_API_TOKEN=mailerlite-api-token RAILS_ENV=test bundle exec rails db:drop db:create db:schema:load --trace
+          command: MAILERLITE_API_TOKEN=mailerlite-api-token RAILS_ENV=test bundle exec rails db:drop db:create db:schema:load --trace --verbose
 
   # run_tests:
   #   steps:
